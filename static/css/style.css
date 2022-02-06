@@ -1,0 +1,15 @@
+.card {
+  height: 400px;
+  /* Your height here */
+  overflow: hidden;
+}
+
+.card-image {
+  height: 260px;
+  /* Your height here */
+  overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+/*# sourceMappingURL=style.css.map */

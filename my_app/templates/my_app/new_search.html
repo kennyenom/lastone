@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block title%}
+search
+{%endblock title%}
+
+{%block content%}
+<!-- <form action="">
+    {%csrf_token%}
+    <h2>{{search|title}}</h2>
+
+</form> -->
+<div class="row">
+    <div class="col-md-18">
+        <a href="{%url  'home'%}"><button class="btn btn-outline-dark">Back home</button></a>
+        {%for post in final_postings%}
+        <div class="card">
+            <div class="card-image">
+                <a href="{{post.1}}"><img style="object-fit: contain;" src="{{post.3}}" alt=""></a>
+            </div>
+            <div class="card-content">
+              <h2 style="font-weight: bold; font-size: 1.2em;">{{post.0}}</h2>
+            </div>
+            <div class="card-action">
+                <a href="{{post.1}}">view listing:{{post.2}}</a>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+    
+    
+</div>
+{%endblock content%}
