@@ -1,1 +1,1 @@
-web: gunicorn enomsearch:wsgi
+web: gunicorn enomsearch.wsgi
